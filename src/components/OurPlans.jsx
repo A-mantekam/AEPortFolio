@@ -12,7 +12,7 @@ const OurPlans =()=>{
                     <h2>🎬 REEL EDITs</h2>
                     <div className="plan-item">
                         <span className="label">Pricing:</span>
-                        <span className="value">Starts from $49</span>
+                        <span className="value">Starts from ₹249-599</span>
                     </div>
                     <div className="plan-item">
                         <span className="label">Number of Changes:</span>
@@ -32,7 +32,7 @@ const OurPlans =()=>{
                     <h2>🎬 LONG CONTENT EDITs</h2>
                     <div className="plan-item">
                         <span className="label">Pricing:</span>
-                        <span className="value">Starts from $499</span>
+                        <span className="value">Starts from ₹1299-1599</span>
                     </div>
                     <div className="plan-item">
                         <span className="label">Number of Changes:</span>
@@ -52,7 +52,7 @@ const OurPlans =()=>{
                     <h2>🎬 LONG/SHORT SHOOT EDITs</h2>
                     <div className="plan-item">
                         <span className="label">Pricing:</span>
-                        <span className="value">Starts from $499</span>
+                        <span className="value">Starts from ₹1599-2199</span>
                     </div>
                     <div className="plan-item">
                         <span className="label">Number of Changes:</span>

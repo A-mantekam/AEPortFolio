@@ -99,6 +99,180 @@
 
 }
 
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .Home-class {
+        column-gap: 60px;
+        margin-top: 140px;
+    }
+
+    .editor-pic-box {
+        height: 300px;
+        width: 300px;
+    }
+
+    .editor-pic-box::before {
+        height: 380px;
+        width: 380px;
+    }
+
+    .editor-name {
+        font-size: 40px;
+    }
+
+    .editor-info-box {
+        height: 500px;
+        width: 500px;
+        font-size: large;
+    }
+}
+
+@media (max-width: 768px) {
+    .Home-class {
+        flex-direction: column;
+        column-gap: 0;
+        margin-top: 120px;
+        align-items: center;
+    }
+
+    .editor-pic-box {
+        height: 250px;
+        width: 250px;
+        margin: 20px;
+    }
+
+    .editor-pic-box::before {
+        height: 320px;
+        width: 320px;
+    }
+
+    .editor-name {
+        font-size: 32px;
+        padding-top: 20px;
+    }
+
+    .editor-info-box {
+        height: 400px;
+        width: 90%;
+        max-width: 500px;
+        font-size: medium;
+        padding-left: 15px;
+        border-radius: 20px;
+    }
+
+    .social-handles {
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: -15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Home-class {
+        margin-top: 100px;
+    }
+
+    .editor-pic-box {
+        height: 180px;
+        width: 180px;
+        margin: 15px;
+    }
+
+    .editor-pic-box::before {
+        height: 240px;
+        width: 240px;
+    }
+
+    .editor-name {
+        font-size: 24px;
+        padding-top: 15px;
+    }
+
+    .editor-info-box {
+        height: auto;
+        width: 90%;
+        max-width: 100%;
+        font-size: small;
+        padding: 15px;
+        border: solid black 5px;
+    }
+
+    .social-handles {
+        gap: 15px;
+    }
+}
+
+/* Extra Small Phone - Below 400px */
+@media (max-width: 400px) {
+    .Home-class {
+        margin-top: 90px;
+    }
+
+    .editor-pic-box {
+        height: 160px;
+        width: 160px;
+        margin: 10px;
+    }
+
+    .editor-pic-box::before {
+        height: 210px;
+        width: 210px;
+    }
+
+    .editor-name {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .editor-info-box {
+        height: auto;
+        width: 95%;
+        font-size: 12px;
+        padding: 10px;
+        border: solid black 4px;
+        border-radius: 15px;
+    }
+
+    .social-handles {
+        gap: 12px;
+        font-size: medium;
+    }
+}
+
+/* Ultra Small Phone - Below 330px */
+@media (max-width: 330px) {
+    .Home-class {
+        margin-top: 80px;
+        column-gap: 0;
+    }
+
+    .editor-pic-box {
+        height: 140px;
+        width: 140px;
+        margin: 8px;
+    }
+
+    .editor-pic-box::before {
+        height: 180px;
+        width: 180px;
+    }
+
+    .editor-name {
+        font-size: 18px;
+    }
+
+    .editor-info-box {
+        font-size: 11px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .social-handles {
+        gap: 10px;
+    }
+}
+
+
 .editor-info-box .info{
     animation: slideLeft  1.5s ease ;
     /* animation-delay: 1.2s; */

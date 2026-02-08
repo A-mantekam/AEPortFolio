@@ -4,14 +4,14 @@ import './header.css'; // Optional: If you separate styles into a CSS file
 
 const Header = () => {
     return (
-        <header className="header-container">
+        <header className="header-container z-100">
             <div className="top-logo" id="main-logo">
                 <img src={logo} alt="Company Logo" />
             </div>
 
             <div className="spacer"></div>
 
-            <nav className="top-bar" id="top-bar">
+            <nav className="top-bar " id="top-bar">
                 <a href="#Home">Home</a>
                 <a href="#AboutUs">About Us</a>
                 <a href="#contactus">Contact</a>

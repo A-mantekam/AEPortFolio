@@ -8,12 +8,13 @@ import P4 from './../assets/Projects/P4.mp4';
 import P5 from './../assets/Projects/P5.mp4';
 import P6 from './../assets/Projects/P6.mp4';
 
-const videos = [P2, P3, P5, P1, P4,P6];
+const videos = [P2, P3, P5, P1, P4, P6];
 
 const Project = () => {
     const videoRefs = useRef([]);
+    const scrollRef = useRef(null);
 
-    // Play the first video on mount
+    // Play first video on mount
     useEffect(() => {
         const firstVideo = videoRefs.current[0];
         if (firstVideo) {
@@ -21,7 +22,7 @@ const Project = () => {
         }
     }, []);
 
-    // Pause all videos and play the hovered one
+    // Hover play logic
     const handleMouseEnter = (index) => {
         videoRefs.current.forEach((video, i) => {
             if (video) {
@@ -34,23 +35,49 @@ const Project = () => {
         });
     };
 
+    // Scroll functions
+    const scrollLeft = () => {
+        scrollRef.current.scrollBy({
+            left: -300,
+            behavior: 'smooth'
+        });
+    };
+
+    const scrollRight = () => {
+        scrollRef.current.scrollBy({
+            left: 300,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <div className='Project-area' id='Project-area'>
             <div className='Project-title'>OUR PROJECTS</div>
-            <div className='Projects-scroll'>
-                {videos.map((videoSrc, index) => (
-                    <div className='video-wrapper' key={index}>
-                        <video
-                            ref={(el) => (videoRefs.current[index] = el)}
-                            src={videoSrc}
-                            loop
-                            muted
-                            playsInline
-                            className='video'
-                            onMouseEnter={() => handleMouseEnter(index)}
-                        />
-                    </div>
-                ))}
+
+            <div className="scroll-container">
+                <button className="scroll-btn left" onClick={scrollLeft}>
+                    &#10094;
+                </button>
+
+                <div className='Projects-scroll' ref={scrollRef}>
+                    {videos.map((videoSrc, index) => (
+                        <div className='video-wrapper' key={index}>
+                            <video
+                                ref={(el) => (videoRefs.current[index] = el)}
+                                src={videoSrc}
+                                loop
+                                muted
+                                playsInline
+                                className='video'
+                                onMouseEnter={() => handleMouseEnter(index)}
+                            />
+                        </div>
+                    ))}
+                </div>
+
+                <button className="scroll-btn right" onClick={scrollRight}>
+                    &#10095;
+                </button>
             </div>
         </div>
     );

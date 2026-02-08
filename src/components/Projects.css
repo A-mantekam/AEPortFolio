@@ -1,4 +1,3 @@
-/* Overall section */
 
 .Project-area {
     background-color: #0D1B2A;
@@ -63,4 +62,200 @@
     cursor: pointer;
     border:5px #B3AF8F solid;
     box-shadow: 10px ;
+}
+.scroll-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.Projects-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Projects-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border: none;
+    font-size: 28px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .Project-area {
+        margin-top: 3%;
+        gap: 1.5rem;
+    }
+
+    .Project-title {
+        font-size: 45px;
+    }
+
+    .video-wrapper {
+        flex: 0 0 70%;
+        max-width: 350px;
+        height: 480px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Project-area {
+        margin-top: 5%;
+        gap: 1rem;
+    }
+
+    .Project-title {
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    .Projects-scroll {
+        width: 95%;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .video-wrapper {
+        flex: 0 0 80%;
+        max-width: 320px;
+        height: 450px;
+        border-radius: 15px;
+    }
+
+    .scroll-btn {
+        font-size: 22px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Project-area {
+        margin-top: 10%;
+        gap: 1rem;
+        padding: 0 10px;
+    }
+
+    .Project-title {
+        font-size: 28px;
+        padding: 10px 5px;
+    }
+
+    .Projects-scroll {
+        width: 100%;
+        gap: 10px;
+        padding: 10px 5px;
+    }
+
+    .video-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 380px;
+        border-radius: 12px;
+    }
+
+    .video {
+        transform: scale(1);
+    }
+
+    .video:hover {
+        transform: scale(1);
+        border: 3px #B3AF8F solid;
+    }
+
+    .scroll-btn {
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+}
+
+/* Extra Small Phone - Below 400px */
+@media (max-width: 400px) {
+    .Project-area {
+        margin-top: 15%;
+        gap: 0.8rem;
+        padding: 0 5px;
+    }
+
+    .Project-title {
+        font-size: 24px;
+        padding: 8px 3px;
+    }
+
+    .Projects-scroll {
+        width: 100%;
+        gap: 8px;
+        padding: 8px 3px;
+    }
+
+    .video-wrapper {
+        height: 340px;
+        border-radius: 10px;
+    }
+
+    .scroll-btn {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+}
+
+/* Ultra Small Phone - Below 330px */
+@media (max-width: 330px) {
+    .Project-area {
+        margin-top: 18%;
+        gap: 0.5rem;
+        padding: 0 3px;
+    }
+
+    .Project-title {
+        font-size: 20px;
+        padding: 6px 2px;
+    }
+
+    .Projects-scroll {
+        width: 100%;
+        gap: 5px;
+        padding: 5px 2px;
+    }
+
+    .video-wrapper {
+        height: 300px;
+        border-radius: 8px;
+    }
+
+    .video:hover {
+        border: 2px #B3AF8F solid;
+    }
+
+    .scroll-btn {
+        font-size: 14px;
+        padding: 4px 6px;
+    }
+}
+
+
+.scroll-btn.right {
+    right: 0;
+}
+
+.scroll-btn:hover {
+    background: rgba(0,0,0,0.8);
 }

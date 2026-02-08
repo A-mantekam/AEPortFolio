@@ -6,7 +6,7 @@ import EditorImg from '../assets/editorAman.png';
 const Home =()=>{
     return(
         
-        <div className='Home-class' id='Home'>
+        <div className='Home-class ' id='Home'>
             <div>
                 <div className='editor-pic-box'> 
                 <img src={EditorImg} className="main-editor-img"alt="" />

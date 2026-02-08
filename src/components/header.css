@@ -2,6 +2,7 @@
 
 body{
     background-color: #0D1B2A;
+    margin-bottom: 200px;
 }
 
 .header-container {
@@ -62,4 +63,147 @@ body{
 
 .top-bar a:hover {
     color: orange;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 8px 5px;
+    }
+
+    .top-logo img {
+        height: 60px;
+        margin-left: 15px;
+    }
+
+    .top-bar {
+        column-gap: 30px;
+    }
+
+    .top-bar a {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Responsive - iPad/Tablet */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        padding: 8px 5px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .top-logo {
+        flex: 0;
+    }
+
+    .top-logo img {
+        height: 45px;
+        margin-left: 8px;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    .top-bar {
+        flex: 1;
+        flex-direction: row;
+        column-gap: 15px;
+        width: auto;
+        margin-right: 10px;
+        gap: 0;
+        text-align: center;
+        justify-content: flex-end;
+    }
+
+    .top-bar a {
+        font-size: 12px;
+        padding: 4px 8px;
+        white-space: nowrap;
+    }
+}
+
+/* Mobile Responsive - Small Phone */
+@media (max-width: 640px) {
+    .header-container {
+        flex-direction: row;
+        padding: 6px 3px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-logo img {
+        height: 40px;
+        margin-left: 5px;
+    }
+
+    .top-bar {
+        column-gap: 10px;
+        margin-right: 5px;
+    }
+
+    .top-bar a {
+        font-size: 11px;
+        padding: 3px 6px;
+        white-space: nowrap;
+    }
+}
+
+/* Mobile Responsive - Extra Small Phone */
+@media (max-width: 480px) {
+    .header-container {
+        flex-direction: row;
+        padding: 5px 3px;
+        justify-content: space-between;
+        min-height: auto;
+    }
+
+    .top-logo {
+        flex: 0;
+    }
+
+    .top-logo img {
+        height: 35px;
+        margin-left: 3px;
+    }
+
+    .top-bar {
+        flex-direction: row;
+        column-gap: 6px;
+        width: auto;
+        margin-right: 5px;
+        gap: 0;
+        padding: 0;
+    }
+
+    .top-bar a {
+        font-size: 10px;
+        padding: 2px 4px;
+        white-space: nowrap;
+        font-weight: 400;
+    }
+}
+
+/* Extra Extra Small - Below 380px */
+@media (max-width: 380px) {
+    .header-container {
+        padding: 4px 2px;
+    }
+
+    .top-logo img {
+        height: 30px;
+        margin-left: 2px;
+    }
+
+    .top-bar {
+        column-gap: 4px;
+        margin-right: 3px;
+    }
+
+    .top-bar a {
+        font-size: 9px;
+        padding: 2px 3px;
+    }
 }

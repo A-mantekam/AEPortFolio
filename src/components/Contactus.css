@@ -65,3 +65,145 @@
 .Contactus-class h2{
     color:white;
 }
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .contact-us-top {
+        font-size: 70px;
+    }
+
+    .social-handles-box {
+        gap: 20px;
+    }
+
+    .Editor-insta-details,
+    .Editor-whatsapp-details {
+        width: 40%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us-top {
+        font-size: 50px;
+        margin-top: 15px;
+        text-shadow: 0px 3px 2px #71afdb;
+        text-shadow: 5px 3px 2px #4586b5;
+    }
+
+    .social-handles-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .Editor-insta-details,
+    .Editor-whatsapp-details {
+        width: 90%;
+        max-width: 400px;
+        height: 350px;
+    }
+
+    .Editor-insta-details img,
+    .Editor-whatsapp-details img {
+        height: 75%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .Contactus-class {
+        padding: 10px;
+    }
+
+    .contact-us-top {
+        font-size: 32px;
+        margin-top: 10px;
+        text-shadow: 0px 2px 1px #71afdb;
+        text-shadow: 3px 2px 1px #4586b5;
+    }
+
+    .social-handles-box {
+        gap: 20px;
+    }
+
+    .Editor-insta-details,
+    .Editor-whatsapp-details {
+        width: 95%;
+        max-width: 100%;
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    .Editor-insta-details img,
+    .Editor-whatsapp-details img {
+        height: 70%;
+        object-position: center;
+    }
+}
+
+/* Extra Small Phone - Below 400px */
+@media (max-width: 400px) {
+    .Contactus-class {
+        padding: 8px;
+    }
+
+    .contact-us-top {
+        font-size: 26px;
+        margin-top: 8px;
+        text-shadow: 0px 2px 1px #71afdb;
+        text-shadow: 2px 2px 1px #4586b5;
+    }
+
+    .social-handles-box {
+        gap: 15px;
+    }
+
+    .Editor-insta-details,
+    .Editor-whatsapp-details {
+        width: 95%;
+        height: 280px;
+        border-radius: 12px;
+    }
+
+    .Editor-insta-details img,
+    .Editor-whatsapp-details img {
+        height: 65%;
+    }
+}
+
+/* Ultra Small Phone - Below 330px */
+@media (max-width: 330px) {
+    .Contactus-class {
+        padding: 5px;
+    }
+
+    .contact-us-top {
+        font-size: 22px;
+        margin-top: 5px;
+        text-shadow: 0px 1px 1px #71afdb;
+    }
+
+    .social-handles-box {
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .Editor-insta-details,
+    .Editor-whatsapp-details {
+        width: 98%;
+        height: 250px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .Editor-insta-details img,
+    .Editor-whatsapp-details img {
+        height: 60%;
+        margin-top: 10px;
+    }
+
+    .Contactus-class h2 {
+        font-size: 16px;
+    }
+}
